@@ -11,7 +11,7 @@ try {
   //Should be a message a typical user could understand
 }
 $fset = $con->query("select * from setting")->fetch_assoc();
-$fetch_main = $con->query("select * from main_setting")->fetch_assoc();
+// $fetch_main = $con->query("select * from main_setting")->fetch_assoc();
 
 date_default_timezone_set($fset['timezone']);
 $dirname = dirname( dirname(__FILE__) ).'/api';

@@ -1,4 +1,4 @@
 <?php
 require 'include/dbconfig.php';
-echo $fetch_main['data'];
+// echo $fetch_main['data'];
 ?>
