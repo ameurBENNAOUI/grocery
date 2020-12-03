@@ -2,23 +2,7 @@
 session_start();
 require 'dbconfig.php';
 ?>
-<?php
-// if($_SERVER['REQUEST_URI'] !='/activate.php')
-// {
-if(empty($_SESSION['username']))
-{
 
-}
-else 
-{
-?>
-<script>
-    window.location.href="dashboard.php";
-</script>
-<?php 
-}
-// }
-?>
 <!DOCTYPE html>
 <html lang="en" class="loading">
   
