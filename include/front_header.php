@@ -2,7 +2,23 @@
 session_start();
 require 'dbconfig.php';
 ?>
+<?php
+if($_SERVER['REQUEST_URI'] !='/activate.php')
+{
+if(empty($_SESSION['username']))
+{
 
+}
+else 
+{
+?>
+<script>
+    window.location.href="dashboard.php";
+</script>
+<?php 
+}
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="loading">
   
@@ -10,9 +26,14 @@ require 'dbconfig.php';
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
    	 <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+	 <?php
+if($_SERVER['REQUEST_URI'] !='/activate.php')	
+{	
+	 ?>
     <title>Login Page - <?php echo $fset['title'];?></title>
-
+<?php } else {?>
+ <title>Verify Page - <?php echo $fset['title'];?></title>
+<?php } ?>
     <link rel="shortcut icon"  href="<?php echo $fset['favicon'];?>">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
