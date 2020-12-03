@@ -4,7 +4,7 @@ session_start();
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 try {
   //Username, Password and Database
-  $con = new mysqli("localhost", "username", "password", "Database");
+  $con = new mysqli("localhost", "cp693c1f1c2", "dcce7e77d76c89c6caced22a9c765e741d0ff0bd", "cp693c1f1c2");
   $con->set_charset("utf8mb4");
 } catch(Exception $e) {
   error_log($e->getMessage());
