@@ -1,4 +1,6 @@
-
+<?php 
+require 'include/front_header.php';
+?>
   <body data-col="1-column" class=" 1-column  blank-page blank-page">
       <div class="layer"></div>
     <!-- ////////////////////////////////////////////////////////////////////////////-->
